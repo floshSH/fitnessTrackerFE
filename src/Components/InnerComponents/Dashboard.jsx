@@ -31,7 +31,7 @@ const Dashboard = () => {
     const fetchData = async () => {
       try {
         //console.log("hii")
-        const response = await axios.get("http://localhost:5000/data/getToday", {
+        const response = await axios.get("https://fitnesstrackerbe.onrender.com/data/getToday", {
           headers: {
 
             Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -84,14 +84,14 @@ const Dashboard = () => {
     else {
       formData.part = dropdown;
       console.log(formData)
-      const response = await axios.post("http://localhost:5000/data/post", { formData }, {
+      const response = await axios.post("https://fitnesstrackerbe.onrender.com/data/post", { formData }, {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
         },
       })
       console.log(response.data)
       const dataObj1 = response.data;
-      const response2 = await axios.get("http://localhost:5000/data/getToday", {
+      const response2 = await axios.get("https://fitnesstrackerbe.onrender.com/data/getToday", {
         headers: {
 
           Authorization: `Bearer ${localStorage.getItem("token")}`,
