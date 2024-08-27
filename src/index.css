@@ -1,0 +1,52 @@
+#qwerty, #navPhone{
+  display: flex;
+  align-items: center;
+  color: "#404040";
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 1s slide-in;
+  text-decoration: none;
+  &:hover {
+    color:black ;
+  }
+  &:active {
+    color:black;
+    border-bottom: 1.8px solid "#007AFF";
+  }
+  
+
+
+}
+
+@media only screen and (min-width :1000px){
+
+  #navLap, #qwerty{
+    display: block;
+  }
+  #navPhone{
+    display: none;
+  }
+}
+
+@media only screen and (max-width :999px){
+
+  #navLap, #qwerty{
+    display: none;
+  }
+  #navPhone{
+    display: block;
+  }
+}
+
+
+#qwerty, #navPhone{
+  border-radius: 15px;
+}
+
+#homepage{
+  background-image: url('public\pexels-goumbik-669582.jpg') ;
+  
+}
+
+
+
