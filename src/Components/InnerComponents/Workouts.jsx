@@ -34,7 +34,7 @@ const Workouts = () => {
         console.log(date);
       }
 
-      const response = await axios.put("http://localhost:5000/data/getByDate", { date }, {
+      const response = await axios.put("https://fitnesstrackerbe.onrender.com/data/getByDate", { date }, {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`
         }
@@ -56,7 +56,7 @@ const Workouts = () => {
     // console.log(format(newDate.$d, 'yyyy-MM-dd'))
     setSelectedDate(newDate)
     let date = newDate.$d;
-    const response = await axios.put("http://localhost:5000/data/getByDate", { date }, {
+    const response = await axios.put("https://fitnesstrackerbe.onrender.com/data/getByDate", { date }, {
       headers: {
         Authorization: `Bearer ${localStorage.getItem("token")}`
       }
