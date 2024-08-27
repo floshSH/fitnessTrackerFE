@@ -35,7 +35,7 @@ const Navbar = () => {
   const handleProfile = async () => {
     setClick2(!click2);
     if (!click2) {
-      const response = await axios.get("http://localhost:5000/user/getprofile", {
+      const response = await axios.get("https://fitnesstrackerbe.onrender.com/user/getprofile", {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`
         }
