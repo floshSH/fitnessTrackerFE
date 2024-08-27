@@ -20,7 +20,7 @@ const Register = () => {
   }
 
   const userRegister=async()=>{
-    const response=await axios.post("http://localhost:5000/user/register",{username,email,password});
+    const response=await axios.post("https://fitnesstrackerbe.onrender.com/user/register",{username,email,password});
     console.log(response.data.message);
     if(response.data.message === "User registered successfully"){
       navigate("/");
