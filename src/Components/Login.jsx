@@ -22,7 +22,7 @@ const Login = () => {
     const loginUser=async()=>{
       try {
      
-        const response=await axios.post("http://localhost:5000/user/login",{email,password});
+        const response=await axios.post("https://fitnesstrackerbe.onrender.com/user/login",{email,password});
         if(response.data.message === "Login successful"){
           localStorage.setItem("token", response.data.token);
           console.log(localStorage.getItem('token'))
