@@ -18,7 +18,7 @@ const ResetPassword = () => {
     const resetPassword=async()=>{
         const email=params.email;
   
-        const response= await axios.put("http://localhost:5000/user/resetPassword",{email, password});
+        const response= await axios.put("https://fitnesstrackerbe.onrender.com/user/resetPassword",{email, password});
         alert(response.data.message);
         if(response.data.message==="Password Changed successfully"){
            navigate('/');
