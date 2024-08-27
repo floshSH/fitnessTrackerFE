@@ -29,7 +29,7 @@ const Contact = () => {
     }
     else {
       formData.issueType = dropdown;
-      axios.post("http://localhost:5000/issue/postIssue", { formData }, {
+      axios.post("https://fitnesstrackerbe.onrender.com/issue/postIssue", { formData }, {
         headers: {
           Authorization: `Bearer ${localStorage.getItem('token')}`
         }
